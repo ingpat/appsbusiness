@@ -11,6 +11,8 @@ var services = require('./routes/services');
 var servicetraiteurs = require('./routes/servicetraiteurs');
 var patisseries = require('./routes/patisseries');
 var viandes = require('./routes/viandes');
+var contacts = require('./routes/contacts');
+var apropos = require('./routes/apropos');
 
 var app = express();
 
@@ -32,6 +34,8 @@ app.use('/services', services);
 app.use('/servicetraiteurs', servicetraiteurs);
 app.use('/patisseries', patisseries);
 app.use('/viandes', viandes);
+app.use('/contacts', contacts);
+app.use('/apropos', apropos);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
