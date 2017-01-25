@@ -53,18 +53,19 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
+            <li class=(title==='Home' ? 'active' : '')><a href="/">Home</a></li>
+            <li class=(title==='Services' ? 'active' : '')><a href="/services">Services</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produits Lakay <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Produits de Beauté</a></li>
-                <li><a href="#">Produit Medicinale</a></li>
-                <li><a href="#">Autres</a></li>
+                <li><a href="/beautes">Produits de Beauté</a></li>
+                <li><a href="/medicinales">Produit Medicinale</a></li>
+                <li><a href="#">Produits Alimentaires</a></li>
+                <li><a href="/amusegueles">Autres</a></li>
               </ul>
             </li>
-            <li><a href="/contacts">Contact</a></li>
-            <li><a href="/apropos">Apropos</a></li>
+            <li class=(title==='Contact' ? 'active' : '')><a href="/contact">Contact</a></li>
+            <li class=(title==='Apropos' ? 'active' : '')><a href="/apropos">Apropos</a></li>
           </ul>
         </div>
       </div>
@@ -186,7 +187,7 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="/ckeditor/ckeditor.js"></script>
+    
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 </body>
 

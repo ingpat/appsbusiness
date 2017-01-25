@@ -11,8 +11,13 @@ var services = require('./routes/services');
 var servicetraiteurs = require('./routes/servicetraiteurs');
 var patisseries = require('./routes/patisseries');
 var viandes = require('./routes/viandes');
-var contacts = require('./routes/contacts');
+var contact = require('./routes/contact');
 var apropos = require('./routes/apropos');
+var beautes = require('./routes/beautes');
+var medicinales = require('./routes/medicinales');
+var amusegueles = require('./routes/amusegueles');
+
+
 
 var app = express();
 
@@ -34,8 +39,11 @@ app.use('/services', services);
 app.use('/servicetraiteurs', servicetraiteurs);
 app.use('/patisseries', patisseries);
 app.use('/viandes', viandes);
-app.use('/contacts', contacts);
+app.use('/contact', contact);
 app.use('/apropos', apropos);
+app.use('/beautes', beautes);
+app.use('/amusegueles', amusegueles);
+app.use('/medicinales', medicinales);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
